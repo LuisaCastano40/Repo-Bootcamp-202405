@@ -49,7 +49,7 @@
 
 ## Videos de las Sesiones
 
-  <p><a href="https://www.youtube.com/playlist?list=PLpD_vYWjZt11y0RdptTt9JkIafhOc-evL" target="_blank">Video Sesión 1</a> 🎥</p>
+  <p><a href="https://www.youtube.com/playlist?list=PLpD_vYWjZt11y0RdptTt9JkIafhOc-evL" target="_blank">Videos</a> 🎥</p>
 
 <!-- Separador -->
 <hr>
