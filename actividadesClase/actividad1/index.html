@@ -1,27 +1,220 @@
-
+<!-- 
+  html -> lenguaje de marcado de hipertexto
+  marcado -> ETIQUETAS (apertura y cierre)
+  hipertexto -> redirección a otras páginas de html
+ -->
 <!DOCTYPE html>
+
+<!-- 
+  lang -> lenguaje en el que está hecho nuestra página web
+ -->
 <html lang="es">
+
+<!-- HEAD -> CEREBRO DE MI PÁGINA -> 
+
+  Todo lo que necesitemos para que funcione nuestro sitio web, pero NO SE VEA
+
+  - LINKS -> Vinculan con mi .css, vinculan con .js
+  - METADADOS: -> enfocados en el posicionamiento SEO
+-->
+
 <head>
-     <!-- Permite que el navegador interprete caracteres especiales -->
-    <meta charset="UTF-8">
-    <!-- Permite que se pueda adaptar a diferentes pantallas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Permite que el navegador interprete caracteres especiales -->
+  <meta charset="UTF-8">
+  <!-- Permite que se pueda adaptar a diferentes pantallas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Títulos y descripciones meta - enfocado a posicionamiento SEO -->
-    <meta name="author" content="Luisa Castaño">
-    <meta name="keywords" content="Libros, librería, cuentos">
-    <meta name="description" content="pagina informativa sobre libros">
+  <!-- Títulos y descripciones meta - enfocado a posicionamiento SEO -->
+  <meta name="author" content="Luisa Castaño">
+  <meta name="keywords" content="Libros, librería, cuentos">
+  <meta name="description" content="pagina informativa sobre libros">
 
-      <!-- Link a los estilos de la página -->
-    <link rel="stylesheet" href="./styles/index.css">
+  <!-- Link a mis estilos -->
+  <!-- 
+      href -> donde especifico las rutas de mis estilos
+     -->
+  <link rel="stylesheet" href="./styles/index.css">
 
-    <!-- ícono del navegador "favicon" -->
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <!-- Link de mi favicon - logo en la pestaña del navegador-->
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
-    <title>proyecto</title>
+  <!-- Link a mis íconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <title>Proyecto 1</title>
 
 </head>
+
+
 <body>
-    
+  <!-- 
+    BODY -> Donde van nuestras etiquetas -> DONDE ESTRUCTURAMOS NUESTRO PROYECTO
+
+    lo que VEMOS de nuestro sitio web
+    -->
+
+
+  <!-- Inicio encabezado de mi página -->
+  <header>
+    <!-- 
+        dentro ponemos nuestro menú, o baner, o carrusel, o lo que queramos que sea nuestro encabezado
+       -->
+
+    <!-- menú de navegación -->
+
+    <!-- nav-> menú de navegación -->
+    <nav>
+      <!-- Siempre son listas
+          listas ordenadas -> ol (order list)
+          listas desordenadas -> ul (unorder list)
+
+          cada lista tiene su elemento
+          etiqueta -> li -> list item
+        -->
+
+      <!-- <ol>
+            <li>Elemento 1: ordenada</li>
+            <li>Elemento 2: : ordenada</li>
+            <li>Elemnto 3: : ordenada</li>
+          </ol> -->
+
+      <!-- etiqueta de separeción -->
+      <!-- <hr> -->
+
+      <!-- img -> ETIQUETA PARA IMÁGENES -->
+      <!-- a -> ETIQUETA PARA REDIRECCIONAR -->
+
+
+      <ul>
+        <li><a href="https://excalidraw.com/">Seccion 1</a></li>
+        <li><a href="#">Seccion 2</a></li>
+        <li>
+          <a href="./index.html">
+            <!-- src -> source -> fuente
+                La ruta de la imágen 
+                    alt -> texto descriptivo de la imagen -> texto alternativo
+                -->
+            <img src="./assets/logo.png" alt="logo">
+          </a>
+        </li>
+        <li><a href="#">Seccion 3</a></li>
+        <li><a href="https://www.tiendasjumbo.co/">Seccion 4</a></li>
+      </ul>
+    </nav>
+
+    <!-- Seccion baner -->
+    <section>
+      <img src="./assets/banner.webp" alt="bane-libros">
+    </section>
+
+  </header>
+
+  <!-- Inicio del contenido de nuestra página -->
+  <main>
+    <!-- Sección informativa 1 -->
+
+    <!-- Etiqueta SECTION -> me divide mi sitio en temátigas generales de contenido -->
+    <section>
+      <!-- 
+            ETIQUETAS PARA LOS TÍTULOS -> h
+          h1 -> EL TÍTULO PRINCIPAL -> SÓLO DEBE HABER UNO
+          h2 -> Títulos de nuestras secciones de contenido -> SI SE PUEDEN REPETIR
+          h3 - h6 -> subtítulos
+          p -> párrafos
+          lorem -> texto falso
+         -->
+
+      <h1>TITULO PRINCIPAL</h1>
+
+      <!-- etiquetas iframe -> nos permiten consumir elementos como videos, mapas, imágenes, etc, de otros sitios web -->
+
+      <!-- 
+          ETIQUETAS SEMÁNTICAS -> estructura del código -> SEO
+          el nombre de la etiqueta ya me indica qué contenido va a haber
+
+          <h3> -> subtitulo
+            <li> -> item lista
+              <nav> -> menú
+            
+          ETIQUETA DIV (No semántico)
+
+          No semántico puede contener cualquier cosa
+          Todo lo no semántico, es para estilos -> css
+          <div> -> contenedor de elementos
+          <span> -> hacer modificaciones específicas
+        -->
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5ovFSHqofE?si=VTGse58lzi9gqHQf"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem quae totam temporibus cupiditate
+          eaque, similique adipisci repellat cumque quisquam, odit quaerat ipsam atque saepe molestias. Voluptatum
+          aperiam laborum molestiae.
+          Quas labore ad facilis corporis eum, necessitatibus mollitia explicabo placeat. Ipsum fugiat, quibusdam,
+          dignissimos nulla sed deleniti quis est officia, et repudiandae sint animi architecto velit commodi ex sequi
+          ratione!
+          Cupiditate ipsa voluptatem aliquid sapiente. Maiores architecto itaque nobis inventore neque, voluptates
+          cupiditate cum tenetur! Nostrum ducimus recusandae consequatur distinctio unde porro aliquam. Nesciunt facere
+          eos iste accusantium nihil cumque.
+        </p>
+    </section>
+
+
+    <!-- Sección informativa 2 -->
+    <section>
+      <h2>El título de mi sección</h2>
+
+      <div>
+        <img src="./assets/img.webp" alt="imagen-Libros">
+        <img src="./assets/img.webp" alt="imagen-Libros">
+        <img src="./assets/img.webp" alt="imagen-Libros">
+        <img src="./assets/img.webp" alt="imagen-Libros">
+        <img src="./assets/img.webp" alt="imagen-Libros">
+        <img src="./assets/img.webp" alt="imagen-Libros">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Inicio de el pie de página -->
+
+  <footer>
+      <!-- división de contenido contáctenos -->
+      <div>
+        <h3>Cotáctame</h3>
+        <ol>
+          <li>Telefono: 555 555 5555</li>
+          <li>Correo: luisa@gmail.com</li>
+          <li>@luisa</li>
+        </ol>
+      </div>
+      <!-- división de contenido logo -->
+      <div>
+        <img src="./assets/logo.png" alt="logo">
+      </div>
+
+      <!-- división de contenido redes sociales -->
+      <!-- ARTICLE -> también es un contenedor, pero de elementos que se realcionan entre sí -->
+      <article>
+        <h3>Redes sociales</h3>
+
+        <div>
+          <!-- la etiqueta i -> ÍCONOS -->
+          <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="bi bi-facebook"></i></a>
+
+          <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          
+        </div>
+      </article>
+
+  </footer>
+
+
 </body>
+
 </html>
