@@ -63,7 +63,7 @@
     <!-- menú de navegación -->
 
     <!-- nav-> menú de navegación -->
-    <nav>
+    <nav class="menuNav">
       <!-- Siempre son listas
           listas ordenadas -> ol (order list)
           listas desordenadas -> ul (unorder list)
@@ -85,7 +85,7 @@
       <!-- a -> ETIQUETA PARA REDIRECCIONAR -->
 
 
-      <ul>
+      <ul class="listaMenu">
         <li><a href="https://excalidraw.com/">Seccion 1</a></li>
         <li><a href="#">Seccion 2</a></li>
         <li>
@@ -94,7 +94,7 @@
                 La ruta de la imágen 
                     alt -> texto descriptivo de la imagen -> texto alternativo
                 -->
-            <img src="./assets/logo.png" alt="logo">
+            <img class="logo" src="./assets/logo.png" alt="logo">
           </a>
         </li>
         <li><a href="#">Seccion 3</a></li>
@@ -103,8 +103,8 @@
     </nav>
 
     <!-- Seccion baner -->
-    <section>
-      <img src="./assets/banner.webp" alt="bane-libros">
+    <section class="baner">
+      <img class="img-baner" src="./assets/banner.webp" alt="bane-libros">
     </section>
 
   </header>
@@ -114,7 +114,7 @@
     <!-- Sección informativa 1 -->
 
     <!-- Etiqueta SECTION -> me divide mi sitio en temátigas generales de contenido -->
-    <section>
+    <section class="seccion1">
       <!-- 
             ETIQUETAS PARA LOS TÍTULOS -> h
           h1 -> EL TÍTULO PRINCIPAL -> SÓLO DEBE HABER UNO
@@ -124,7 +124,7 @@
           lorem -> texto falso
          -->
 
-      <h1>TITULO PRINCIPAL</h1>
+      <h1 class="titulo">TITULO PRINCIPAL</h1>
 
       <!-- etiquetas iframe -> nos permiten consumir elementos como videos, mapas, imágenes, etc, de otros sitios web -->
 
@@ -143,7 +143,7 @@
           <div> -> contenedor de elementos
           <span> -> hacer modificaciones específicas
         -->
-      <div>
+      <div id="div-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5ovFSHqofE?si=VTGse58lzi9gqHQf"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -164,10 +164,10 @@
 
 
     <!-- Sección informativa 2 -->
-    <section>
-      <h2>El título de mi sección</h2>
+    <section class="seccion2">
+      <h2 class="titulo">El título de mi sección</h2>
 
-      <div>
+      <div class="contenedor-img">
         <img src="./assets/img.webp" alt="imagen-Libros">
         <img src="./assets/img.webp" alt="imagen-Libros">
         <img src="./assets/img.webp" alt="imagen-Libros">
@@ -181,7 +181,7 @@
 
   <!-- Inicio de el pie de página -->
 
-  <footer>
+  <footer >
       <!-- división de contenido contáctenos -->
       <div>
         <h3>Cotáctame</h3>

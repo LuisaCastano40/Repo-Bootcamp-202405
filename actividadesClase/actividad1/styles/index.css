@@ -1,0 +1,213 @@
+/* ESTO ES UN COMENTARIO EN CSS*/
+
+/* Guía paso a paso, qué les recomiendo yo para trabajar en css
+
+    1. verifique que haya vinculado bien su css al html
+
+    Ej:
+
+    body{
+    background-color: aqua;
+    }
+
+    2. Tengan un orden definido
+
+    CSS -> Hoja de estilos en cascada
+
+*/
+
+/* lo primero son las importaciones */
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+
+/* Establecer las variables de css */
+/* Paleta de colores, tipografías, medidas que se repitan constantemente */
+
+
+/* 
+    Selectores: 
+        -Etiqueta: General
+        -Clases: un poco más específicas (varios elementos pueden tener la misma clase) -> .
+        -ID: sumamente específicos (cada elemento sólo puede tener uno) -> #
+    Pseudoclases: elementos propios de css que me hacen referencia a mi html -> características particulares -> :root
+
+    Pseudoelementos: -> ::after
+*/
+
+
+/* pseudoclase que me hace referencia a todo mi html root -> codíco raíz */
+:root{
+    --tipografia:'Zilla Slab', sans-serif;
+    --colorFondo:#E2DED7;
+    --colorClaro:#108BB2;
+    --colorTexto:#063A4C;
+    --colorContraste:#EE466F;
+}
+
+
+/* Condiciones iniciales */
+/* Los estilos que quiero en TODO MI SITIO WEB */
+
+
+/* *-> selector universal -> me aplica los estilos a TODO */
+*{
+    /* margin ->margen externo */
+    margin:0;
+    /* padding -> margen interno */
+    padding: 0;
+}
+
+body{
+    /* Ancho del tamaño de mi pantalla */
+    width: 100%;
+
+    /* background-color -> color de fondo */
+    background-color: var(--colorFondo);
+    /* tipografía */
+    font-family: var(--tipografia);
+    /* color de la letra */
+    color: var(--colorTexto);
+    /* Quitar el scroll horizontal 
+        overflow -> si se sobresale el contenido
+        hidden -> esconder
+    */
+    overflow-x: hidden;
+    /* ajuste a mis dimensiones */
+    box-sizing: border-box;
+}
+
+
+/* ---------HEADER------- */
+
+/* contenedor padre -> determinen dimensiones */
+header{
+    /* ancho */
+    /* vw -> ancho de pantalla
+        vh -> alto de pantalla
+    */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Lo que está dentro del header son hijos */
+
+.menuNav{
+    background-color: var(--colorClaro);
+    width: 100%;
+    height: 100px;
+}
+
+/* contenedor padre de las listas que quiero modificar una al lado del otro */
+.listaMenu{
+    height:100%;
+    /* disposición flexible -> los elementos uno al lado del otro */
+    display: flex;
+    /* centrar */
+    /* centra an x */
+    justify-content: center;
+    /* centrar en y */
+    align-items: center;
+    /* separeciones entre elementos hijos */
+    gap: 50px;
+    /* quitar viñetas de lista */
+    list-style: none;
+}
+
+.listaMenu a{
+    /* quitar la decoración del texto */
+    text-decoration: none;
+    /* color del texto */
+    color: var(--colorTexto);
+    /* tamaño de texto */
+    font-size: 18px;
+    /* más ancha la letra -> negrilla */
+    font-weight: bold;
+}
+
+.listaMenu a:hover{
+    color: white;
+}
+
+.logo{
+    /* ancho */
+    width: 50px;
+    /* alto */
+    height: 50px;
+}
+
+
+/* banner */
+/* contenedor padre de la imagen */
+.baner{
+    width: 100%;
+    height: 80%;
+}
+/* mi imagen ocupa todo el espacio de su padre */
+.baner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------MAIN------- */
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* dispongan una debajo de la otra */
+    flex-direction: column;
+}
+
+/* Seccion 1 */
+.seccion1{
+    width: 80%;
+}
+#div-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#div-video iframe{
+    width: 50%;
+}
+
+#div-video p{
+    width: 50%;
+}
+/* Seccion 2 */
+
+.seccion2{
+    width: 80%;
+}
+
+.contenedor-img{
+
+    /* organizar en filas y columnas */
+    display: grid;
+    /* filas */
+    /* 1fr -> me ocupe una fracción del espacio */
+    grid-template-rows: 1fr 1fr;
+
+    /* Columnas  */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    /* centrar texto */
+    text-align: center;
+    /* textos en mayúscula */
+    text-transform: uppercase;
+    /* margen arriba y abajo - derecha e izquierda */
+    margin: 20px 0px;
+}
+
+/* ---------FOOTER------- */
+
