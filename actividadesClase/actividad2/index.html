@@ -1,0 +1,123 @@
+<!-- Vamos a seguir con la importancia del posicionamiento SEO -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadatos -->
+    <meta name="author" content="Luisa Castaño">
+    <meta name="keywords" content="practica, loros">
+    <meta name="description" content="actividad práctica css - flexbox y grid">
+
+    <!-- Links de los estilos de mi página -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Link del icóno de la pestaña del navegador - favicon -->
+    <link rel="shortcut icon" href="./assets/logo/favicon.png" type="image/x-icon">
+
+    <title>Práctica 2</title>
+</head>
+<body>
+
+    <!-- Inicio header - Encabezado -->
+
+    <header>
+        <nav class="menuNavegacion">
+            <!-- Nuestro logo -->
+            <!-- 
+                ETIQUETAS NO SEMÁNTICAS: (se utilizan principalmente para dar estilos)
+                div
+                span
+
+             -->
+            <div class="logo">
+                <a href="#">
+                    <img class="img-logo" src="./assets/logo/logo.jpg" alt="logo">
+                    <!-- 
+                        a
+                        h1 (si no lo repite después)
+                        h2 
+                        span 
+                     -->
+                    <p class="p-logo">Looking for <span class="span-logo"> freedom </span> </p>
+                </a>
+            </div>
+
+            <!-- Lista -> menu de navegación -->
+            <ul class="listaMenu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyecto</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Aliados</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicio main - Contenido de nuestra página -->
+
+    <main>
+        <!-- Sección de contenido principal -->
+        <section class="contenedorPrincipal">
+
+            <h1>Proyecto: Tomemos Conciencia</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <!-- article -> contenedores para elementos que se relacionan entre sí -->
+            <article class="contenedorImagenes">
+
+                <div class="imagenes img1">
+                    <img src="./assets/images/img1.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                </div>
+
+                <div class="imagenes img2">
+                    <img src="./assets/images/img2.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                </div>
+                <div class="imagenes img3">
+                    <img src="./assets/images/img3.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                </div>
+                <div class="imagenes img4">
+                    <img src="./assets/images/img4.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                </div>
+                <div class="imagenes img5">
+                    <img src="./assets/images/img7.png" alt="img-proyecto">
+                    <div class="parrafo-img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- Sección de práctica flexbox -->
+        <section class="contenedorFlex">
+            <div class="flex-hijo">Caja 1</div>
+            <div class="flex-hijo">Caja 2</div>
+            <div class="flex-hijo">Caja 3</div>
+            <div class="flex-hijo">Caja 4</div>
+            <div class="flex-hijo">Caja 5</div>
+        </section>
+
+    </main>
+
+    <!-- Inicio footer - pie de página -->
+
+    <footer>
+        <p>Práctica de desarrollo creada por &copy;Luisa Castaño 2024</p>
+    </footer>
+    
+</body>
+</html>
