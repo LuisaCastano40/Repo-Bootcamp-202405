@@ -38,6 +38,7 @@ body{
     height: auto;
     /* Overflow -> me sirve para definir qué pasa con el contenido que sobresale de mi contenedor */
     overflow-x:hidden;
+
 }
 
 
@@ -45,8 +46,6 @@ body{
 header{
     width: 100%;
     height: 100px;
-    border: solid red;
-    
 }
 
 .menuNavegacion{
@@ -57,32 +56,92 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-   
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo{
-    border: 5px solid violet;
     height: 100%;
-    display: flex;
 }
 .logo a{
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    font-family: var(--textContent);
+    color: var(--colorText);
+    /* grosor de la fuente */
+    font-weight: bold;
+    /* cambiar tamaño a la letra */
+    font-size: 25px;
 }
-
+.p-logo{
+    width: 150px;
+    /* alineación del texto */
+    text-align: left;
+}
+.span-logo{
+    color: var(--colorEnfasis1);
+}
 .img-logo{
     height: 100%;
 }
+
 .listaMenu{
-    border:5px solid green;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.listaMenu a{
+    text-decoration: none;
+    color: var(--colorText);
+    font-family: var(--textContent);
+    font-size: 20px;
+}
+
+.listaMenu a:hover{
+    color: var(--colorEnfasis1);
 }
 
 /* ----------------MAIN--------------- */
+main{
+    width: 100%;
+    padding: 100px;
+}
 
+.contenedorPrincipal{
+   
+    font-family: var(--textContent);
+}
+
+.contenedorPrincipal h1{
+    /* font-family: var(--textTitle); */
+    font-size: 40px;
+    color: var(--colorEnfasis3);
+}
+
+.contenedorImagenes{
+    border: 3px solid var(--colorEnfasis3);
+    margin-top: 50px;
+    border-radius: 50px;
+}
 
 /* ----------------FOOTER--------------- */
+
+footer{
+    height: 100px;
+    background-color: var(--colorEnfasis3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: var(--textContent);
+    color: var(--colorText);
+}
