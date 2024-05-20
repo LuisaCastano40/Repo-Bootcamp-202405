@@ -190,7 +190,7 @@ main{
     display: grid;
     /* filas */
     /* 1fr -> me ocupe una fracción del espacio */
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
     /* Columnas  */
     grid-template-columns: 1fr 1fr 1fr;

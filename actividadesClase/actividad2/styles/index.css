@@ -63,7 +63,7 @@ header{
     padding-right: 20px;
 
     /* poner esto por encima de todo */
-    z-index: 100;
+    z-index: 1000;
 }
 
 .logo{
@@ -170,7 +170,7 @@ main{
 }
 
 .parrafo-img{
-    background-color: #D8C37F;
+    background-color: #d8c37fa4;
     position: absolute;
     /* por defecto se organiza arriba 0, izquierda 0 */
     width: 100%;
@@ -186,7 +186,7 @@ main{
 }
 
 .parrafo-img:hover{
-    opacity: 0.6;
+    opacity: 1;
     /* cuando el cursor se ponga en la imágen, me salga como una manito */
     cursor: pointer;
 }
