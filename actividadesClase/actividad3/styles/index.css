@@ -1,0 +1,53 @@
+/* variables */
+:root{
+    --colorFondo: beige;
+    --colorClaro: lightsalmon;
+    --colorEnfasis: rgb(52, 133, 125);
+    --tipografía:'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* condiciones iniciales */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+    font-family: var(--tipografía);
+    font-size: 25px;
+    overflow-x: hidden;
+}
+
+/* -------------HEADER------- */
+header {
+    border:15px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+.titulo{
+    height: 150px;
+    width: 100%;
+    background-color: var(--colorEnfasis);
+    display: grid;
+    place-content: center;
+    color: var(--colorFondo);
+}
+
+/* -------------MAIN------- */
+
+/* -------------FOOTER------- */
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--colorEnfasis);
+    /* alternativa para centrar un elemento */
+    display: grid;
+    /* centra x y */
+    place-content: center;
+    color: var(--colorFondo);
+}
