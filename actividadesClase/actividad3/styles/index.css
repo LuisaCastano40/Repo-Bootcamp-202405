@@ -26,8 +26,9 @@ body{
 header {
     border:15px solid red;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
+
 .titulo{
     height: 150px;
     width: 100%;
@@ -35,6 +36,81 @@ header {
     display: grid;
     place-content: center;
     color: var(--colorFondo);
+}
+
+/* mi carrusel de imágenes */
+/* contenedor general - es como un marco que me define qué se ve y qué no se ve */
+.contenedor-slider{
+    border: solid 5px var(--colorEnfasis);
+    width: 1000px;
+    height: 500px;
+    /* margin: auto -> centrar contenedores */
+    margin: 100px auto;
+    overflow-x: hidden;
+}
+
+/* contenedor directo, le especifico cómo se debe mover */
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* nombre que se conecta con el keyframe */
+    animation-name: deslizar;
+     /*tiempo de duración  */
+    animation-duration: 10s;
+    /* cuantas veces queremos que se repita la animación */
+    animation-iteration-count: infinite;
+    /* forma en que queremos que se de el movimiento */
+    animation-timing-function: ease-in-out;
+    /* dirección de mi animación */
+    animation-direction: alternate;
+}
+
+/* Vamos a poner a funcionar la animación */
+/* 0% -> 50% -> 100%
+    from -> to */
+
+@keyframes deslizar {
+    from{
+        transform: translateX(0%);
+        transform: scale(0.5);
+    }
+    50%{
+        transform: translateX(-150%);
+        
+    }
+    to{
+        transform: translateX(-300%);
+        transform: scale(1.2);
+    }
+}
+
+/* @keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+} */
+
+/* @keyframes escala {
+    
+    from{
+        transform: scale(0.4);
+    }
+    50%{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.7);
+    }
+} */
+
+.contenedor-slider img{
+    /*  */
+    width: 100%;
+    height: 100%;
 }
 
 /* -------------MAIN------- */
@@ -51,3 +127,6 @@ footer{
     place-content: center;
     color: var(--colorFondo);
 }
+
+
+
