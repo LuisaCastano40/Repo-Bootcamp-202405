@@ -24,7 +24,6 @@ body{
 
 /* -------------HEADER------- */
 header {
-    border:15px solid red;
     width: 100vw;
     height: auto;
 }
@@ -36,14 +35,28 @@ header {
     display: grid;
     place-content: center;
     color: var(--colorFondo);
+    transition: all 500ms ease-in-out;
 }
+
+.titulo:active{
+    background-color: brown;
+    color: chartreuse;
+    transform: scale(1.2);
+}
+
 
 /* mi carrusel de imágenes */
 /* contenedor general - es como un marco que me define qué se ve y qué no se ve */
 .contenedor-slider{
     border: solid 5px var(--colorEnfasis);
-    width: 1000px;
-    height: 500px;
+
+    /* 
+        Para responsive, no usar valores fijos como PX, Sino valores relativos, como % y vw -vh
+    */
+    width: 75%;
+    height: 65vh;
+    /* width: 70%;
+    height: 65vh; */
     /* margin: auto -> centrar contenedores */
     margin: 100px auto;
     overflow-x: hidden;
@@ -73,7 +86,7 @@ header {
 @keyframes deslizar {
     from{
         transform: translateX(0%);
-        transform: scale(0.5);
+        /* transform: scale(0.5); */
     }
     50%{
         transform: translateX(-150%);
@@ -81,7 +94,7 @@ header {
     }
     to{
         transform: translateX(-300%);
-        transform: scale(1.2);
+        /* transform: scale(1.2); */
     }
 }
 
@@ -109,11 +122,51 @@ header {
 
 .contenedor-slider img{
     /*  */
-    width: 100%;
+    /* flex: 1 0 100%; */
     height: 100%;
+    width: 100%;
+    
 }
 
 /* -------------MAIN------- */
+
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+.contenido{
+    border: solid 5px var(--colorEnfasis);
+    width: 75%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.tituloSecundario{
+    text-align: center;
+    padding: 25px;
+}
+.imgParrafo{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Yo puedo llamar varios elementos de mi html, a los que les voy a aplicar los mismos estilod, sólo separándolos por , */
+/* .imgParrafo img, 
+.imgParrafo p {
+    width: 50%;
+    height: 100%;
+} */
+
+.imgParrafo img{
+    width: 50%;
+}
+
+.imgParrafo p{
+    width: 50%;
+}
 
 /* -------------FOOTER------- */
 
@@ -128,5 +181,50 @@ footer{
     color: var(--colorFondo);
 }
 
+/* DISEÑO RESPONSIVE */
+
+/* 
+
+    1. trabajen en % (medidas no fijas) de una vez
+    2. MEDIA QUERIES
+*/
 
 
+
+/* MEDIA QUERIES */
+/* 
+    Me permiten cambiar la apariencia de mis elementos en función de el tamaño de mi pantalla
+
+    dimensión min PC -> 1200px en adelante
+    dimensión para tablet -> 500px -> 1024px
+    dimensiones de celular -> 320 -> 490px
+
+*/
+
+/* Estilos para mi celular */
+/* 
+    estilos nuevos según los px que yo defina
+*/
+@media screen and (max-width:490px){
+    /* body{
+        background-color: blue;
+    } */
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imgParrafo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgParrafo img{
+        width: 100%;
+    }
+    
+    .imgParrafo p{
+        width: 100%;
+    }
+    
+}
