@@ -1,0 +1,15 @@
+/* mi carusel */
+
+.miCarrusel{
+    width: 100%;
+    height: 50vh;
+}
+
+.miCarrusel img{
+    width: 100%;
+    height: 50vh;
+    /* mejorar la vista de la imagen */
+    object-fit: cover;
+    /* posision de la imagen */
+    object-position: top;
+}
