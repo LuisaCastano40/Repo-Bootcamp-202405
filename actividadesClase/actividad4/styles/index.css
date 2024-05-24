@@ -24,3 +24,12 @@
 .misLogos div{
     text-align: center;
 }
+
+/* productos */
+
+.misProductos img{
+    width: 250px;
+    height: 250px;
+}
+
+
