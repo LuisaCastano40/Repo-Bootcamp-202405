@@ -38,6 +38,11 @@
         dark -> negro
         ms-auto -> nos envía los elementos a la derecha
         fs-4 -> font size tamaño 4 (boostrap tiene 6 tamaños)
+        container -> que nos da un margen estandarizado por pantalla
+        container-fluid -> contenedor que siempre me ocupa el 100% de la pantalla
+        row -> filas
+        col -> columnas
+        col-# -> el espacio que ocupa la columna entre 1 y 12
     -->
 
     <!-- Inicio encabezado  -->
@@ -90,6 +95,43 @@
 
     <!-- Inicio de contenido -->
     <main>
+      
+      <!-- Sección de marcas aliadas -->
+      <section class="bg-white container my-5 p-2">
+        <div class="row misLogos">
+
+          <!-- IMPORTANTE: EL ORDEN DE LAS CLASES PARA LAS PANTALLAS IMPORTA
+            1. las pantallas pequeñas
+            2. las pantallas medianas
+            3. último las pantallas grandes
+          -->
+
+          <!-- primer logo -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="./assets/logos/logo1.webp" alt="logo1">
+          </div>
+
+          <!-- segundo logo -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="./assets/logos/logo2.webp" alt="logo2">
+          </div>
+
+          <!-- tercer logo -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="./assets/logos/logo3.webp" alt="logo3">
+          </div>
+
+          <!-- cuarto elemento -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="./assets/logos/logo4.webp" alt="logo4">
+          </div>
+
+          <!-- quinto elemento -->
+          <div class="col-12 col-md-12 col-lg-6">
+            <img src="./assets/logos/logo5.webp" alt="logo5">
+          </div>
+        </div>
+      </section>
 
     </main>
 

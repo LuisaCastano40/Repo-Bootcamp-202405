@@ -2,14 +2,25 @@
 
 .miCarrusel{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 }
 
 .miCarrusel img{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     /* mejorar la vista de la imagen */
     object-fit: cover;
     /* posision de la imagen */
     object-position: top;
+}
+
+/* seccion logos */
+
+.misLogos img{
+    width: 100px;
+    height: 100px;
+}
+
+.misLogos div{
+    text-align: center;
 }
