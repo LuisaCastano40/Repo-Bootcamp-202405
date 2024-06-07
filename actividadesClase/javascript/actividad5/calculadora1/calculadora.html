@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="./styles/calculadora.css">
+
+    <script src="./script/calculadora.js" defer></script>
+
+    <title>Actividad 5 | Calculadora básica</title>
+
+    <!-- Títulos y descripciones meta -->
+    <meta name="author" content="Luisa Castaño" />
+    <meta name="keywords" content="Práctica, logica programación, js, manejo DOM, eventos" />
+    <meta name="description" content="Actividad bases de js con manejo del DOM y práctica de lógica de programación mediante el uso de una calculadora" />
+</head>
+<body>
+
+    <!-- ETIQUETAS SEMÁNTICAS -->
+
+    <!-- Inicio de la cabecera de la página -->
+    <header>
+        <h1>Actividad 5: Manejo del DOM</h1>
+        <h2>Calculadora básica</h2>
+    </header>
+    <!-- Fin de la cabecera de la página -->
+
+    <!-- Inicio del contenido de la página -->
+    <main> 
+        <section class="container-calculatora">
+            <article class="container-inputs">
+                <!-- Pantalla de la calculadora -->
+                <div id="pantalla">res</div>
+
+                <!-- 
+                    class -> para dar esilos a su sitio web
+                    id -> para cuando van a manipular un elemento desde js
+                -->
+
+                <!-- Entrada de los números a operar -->
+                <input type="number" id="numero1" placeholder="Ingrese el primer número">
+                <input type="number" id="numero2" placeholder="Ingrese el segundo número"> 
+            </article>
+            
+            <!-- Botones para llamar las funciones de js -->
+            <article class="container-operaciones">
+                <button onclick="suma()">+</button>
+                <button onclick="resta()">-</button>
+                <button onclick="multiplicacion()">x</button>
+                <button onclick="division()">/</button>
+            </article>
+        </section>
+    </main>
+    <!-- Fin del contenido de la página -->
+
+    <!-- Inicio del pie de página -->
+    <footer>
+        <p>Realizado por &copy; Luisa Castaño 2024</p>
+    </footer>
+    <!-- Fin del pie de página -->
+
+</body>
+</html>
