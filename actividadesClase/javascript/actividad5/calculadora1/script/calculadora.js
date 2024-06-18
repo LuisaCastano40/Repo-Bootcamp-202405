@@ -55,7 +55,7 @@ function suma() {
     pantalla.textContent = resultadoSuma;
 }
 
-function resta(){
+function resta() {
     numero1 = document.getElementById('numero1').value;
     numero2 = document.getElementById('numero2').value;
     resultado = parseInt(numero1) - parseInt(numero2);
@@ -63,17 +63,17 @@ function resta(){
     pantalla.textContent = resultado;
 }
 
-function multiplicación(){
+function multiplicación() {
     numero1 = document.getElementById('numero1').value;
     numero2 = document.getElementById('numero2').value;
-    resultado = parseInt(numero1)*parseInt(numero2);
+    resultado = parseInt(numero1) * parseInt(numero2);
     pantalla.textContent = resultado;
 }
 
-function division(){
+function division() {
     numero1 = parseFloat(document.getElementById('numero1').value);
     numero2 = parseFloat(document.getElementById('numero2').value);
-    resultado = numero1/numero2;
+    resultado = numero1 / numero2;
     //toFixed -> me muestra la cantidad de decimales que yo quiero
     //Math.ceil -> redondea por encima
     //Math.round -> redondea números
