@@ -8,7 +8,7 @@
 <hr>
 
 <!-- Tabla de Contenido -->
-<h2 align="center">Tabla de Contenido</h2>
+<!-- <h2 align="center">Tabla de Contenido</h2> -->
 
 
 <!-- Separador -->
@@ -34,7 +34,7 @@
 - [uuid](https://www.npmjs.com/package/uuid)
 
 
-<p><b>Recordemos teoría y estructuremos nuestro proyecto con Node.js.<b> Node.js es un entorno de ejecución de JavaScript del lado del servidor que utiliza el motor V8 de Google Chrome. Permite ejecutar código JavaScript en el servidor, lo cual es especialmente beneficioso para aplicaciones escalables y en tiempo real.<p>
+<p><b>Recordemos teoría y estructuremos nuestro proyecto con Node.js.</b> Node.js es un entorno de ejecución de JavaScript del lado del servidor que utiliza el motor V8 de Google Chrome. Permite ejecutar código JavaScript en el servidor, lo cual es especialmente beneficioso para aplicaciones escalables y en tiempo real.<p>
 <br>
 <br>
 
@@ -131,7 +131,6 @@
   <li><a href="#" target="_blank">Video Sesión 3</a> 🎥</li>
   <li><a href="#" target="_blank">Video Sesión 4</a> 🎥</li>
   <li><a href="#" target="_blank">Video Sesión 5</a> 🎥</li>
-  <li>
 </ul>
 
 <!-- Separador -->
